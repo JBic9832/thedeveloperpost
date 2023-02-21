@@ -28,7 +28,7 @@ I would recommend starting with Amazon Associates or Google Adsense for the ease
 
 ### Earning potential
 
-The earning potential here is decent as for every 1000 views to your site you can expect $2 - $5 which doesn't seem like a lot but when you consider that that is just views and you get paid more if someone converts through and ad on your page. It certainly won't make you a millionaire overnight but if you are consistent about posting and create really engaging content this can most definitely be a formidable source of income.
+The earning potential here is decent as for every 1000 views to your site you can expect $2 - $5 which doesn't seem like a lot but when you consider that that is just views and you get paid more if someone converts through an ad on your page. It certainly won't make you a millionaire overnight but if you are consistent about posting and create really engaging content this can most definitely be a formidable source of income.
 
 # 2. Affiliate marketing
 
