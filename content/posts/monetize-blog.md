@@ -8,7 +8,7 @@ Categories: ["Building Income"]
 layout: "post"
 ---
 
-If you own a blog with any amount of traffic you have surely thought about how you can begin to monetize that traffic. While there are many ways of doing this, today I am going to be breaking down the three best and most popular ways you can turn your blog in to a revenue stream month over month generating you passive income.
+If you own a blog with any amount of traffic you have surely thought about how you can begin to monetize that traffic. While there are many ways of doing this, today I am going to be breaking down the three best and most popular ways you can turn your blog in to a revenue stream month over month generating you passive income. If you don't own a blog and want to learn how to create one; {{<link href="http://localhost:1313/posts/build-a-blog/" name="Read This!" target="_blank">}} And come back when you're done!
 
 # How to monetize your blog
 

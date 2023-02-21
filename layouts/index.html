@@ -101,7 +101,7 @@
     {{/* Desktop Posts List */}}
     <div class="hidden sm:block space-y-8">
       {{ range first 3 (where .Site.RegularPages "Type" "posts")}}
-      <div class="flex justify-center items-center space-x-3">
+      <div class="flex justify-start items-center space-x-3">
         {{/* Featured Image */}}
         <a href="{{.Permalink}}">
           <div
