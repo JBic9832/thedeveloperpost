@@ -8,6 +8,8 @@ author: "Joseph Bickford"
 layout: "post"
 ---
 
+Whether you are a writer or just passionate in your field; blogging can be a great way to share your ideas with the world. It's easy to start a blog but lets get into how you can make a blog and later {{<link href="https://thedeveloperpost.com/posts/monetize-blog/" name="how you can make money from your blog">}}.
+
 # Three Ways to build your blog
 
 1. {{<link href="#1-building-from-scratch" name="Manually with a javascript framework">}}
