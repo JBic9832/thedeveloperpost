@@ -4,16 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {{ if .IsHome }}
-
-    <meta
-      name="description"
-      content="The Developer Post is an independant news organization dedicated to sharing helpful guides, unbaised reviews, and latest trends surrounding tech and business."
-    />
-    {{else}}
-    <meta name="description" content="{{.Page.description}}" />
-    {{ end }}
-
     <script src="//unpkg.com/alpinejs" defer></script>
     <script
       async
@@ -21,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/main.css" />
-    <title>The Developer Post | {{.Page.Title}}</title>
+    <title>The Developer Post</title>
   </head>
   <body class="font-poppins m-0 p-0 bg-slate-100">
     {{ partial "header.html" . }} {{/* Desktop Ads */}}
