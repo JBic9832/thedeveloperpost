@@ -1,0 +1,18 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'The Developer Post'
+
+[assets]
+disableHLJS = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+lineNos = true
+noClasses = true
+style = "dracula"
+
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"

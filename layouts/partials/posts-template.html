@@ -1,0 +1,90 @@
+<!--
+<div class="flex flex-col items-center gap-4">
+  <h1>{{.Title}}</h1>
+  {{ range .Paginator.Pages }} {{/* Mobile */}}
+  <div class="outline-2 outline outline-black p-1 rounded bg-white">
+    <a class="no-underline" href="{{.Permalink}}">
+      {{ with .Params.featured_image }}
+      <div class="flex overflow-hidden rounded !shadow-md">
+        <img class="m-0 max-w-full" src="{{ . }}" alt="" />
+      </div>
+      {{ end }}
+      <div class="px-3 mt-1">
+        <p class="text-xl font-bold m-0 text-black">{{.Title}}</p>
+        <p class="text-black">{{.Params.description}}</p>
+        <a
+          class="no-underline text-primary-blue font-semibold"
+          href="{{.Permalink}}"
+          >Read Article</a
+        >
+      </div>
+    </a>
+  </div>
+  {{ end }}
+</div>
+-->
+<!--
+<div class="flex flex-col items-center gap-4">
+  <h1>{{.Title}}</h1>
+  {{ range .Paginator.Pages }} {{/* Mobile */}}
+  <div class="p-1">
+    <a class="no-underline" href="{{.Permalink}}">
+      {{ with .Params.featured_image }}
+      <div class="flex overflow-hidden !shadow-md">
+        <img class="m-0 max-w-full" src="{{ . }}" alt="" />
+      </div>
+    </a>
+    {{ end }}
+    <div class="px-3 mt-1">
+      <p class="text-xl font-bold m-0 text-black">{{.Title}}</p>
+      <div class="text-sm flex space-x-2">
+        <p>by {{.Params.Author}}</p>
+        <p>|</p>
+        <p>{{.Params.date.Format "January 6, 2006"}}</p>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+-->
+
+<div class="flex flex-col items-center gap-4">
+  <h1>{{.Title}}</h1>
+  {{ range .Paginator.Pages }} {{/* Mobile */}}
+  <div class="p-1">
+    <a class="no-underline" href="{{.Permalink}}">
+      {{ with .Params.featured_image }}
+      <div class="flex overflow-hidden">
+        <img class="m-0 max-w-full" src="{{ . }}" alt="" />
+      </div>
+    </a>
+    {{ end }}
+    <div class="mt-3 text-black">
+      <a class="no-underline text-black" href="{{.Permalink}}">
+        <p class="text-xl sm:text-2xl font-bold m-0">{{.Title}}</p>
+      </a>
+      <p class="hidden sm:flex my-2 text-gray-500">{{.Params.description}}</p>
+      <div class="text-sm flex space-x-3">
+        <p>by {{.Params.Author}}</p>
+        <div class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+            />
+          </svg>
+        </div>
+        <p>{{.Params.date.Format "January 6, 2006"}}</p>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>

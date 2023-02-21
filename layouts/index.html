@@ -1,0 +1,160 @@
+{{ define "main" }}
+
+<div class="flex flex-col items-center">
+  {{/* Hero Title */}}
+  <div class="flex flex-col text-center">
+    <h1>Your number one source of tech content</h1>
+    <p class="m-0">Posts about all thing relating to tech and business.</p>
+  </div>
+
+  {{/* Latest Posts */}}
+  <div class="flex flex-col items-center">
+    <h1>Featured</h1>
+    {{ range first 1 (where .Site.RegularPages "Type" "posts") }}
+    <div class="p-1">
+      <a class="no-underline" href="{{.Permalink}}">
+        {{ with .Params.featured_image }}
+        <div class="flex overflow-hidden">
+          <img class="m-0 max-w-full" src="{{ . }}" alt="" />
+        </div>
+      </a>
+      {{ end }}
+      <div class="mt-3 text-black">
+        <a class="no-underline text-black" href="{{.Permalink}}">
+          <p class="text-xl sm:text-2xl font-bold m-0">{{.Title}}</p>
+        </a>
+        <p class="hidden sm:flex my-2 text-gray-500">{{.Params.description}}</p>
+        <div class="text-sm flex space-x-3">
+          <p>by {{.Params.Author}}</p>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+          </div>
+          <p>{{.Params.date.Format "January 6, 2006"}}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    <h1>Fresh New Posts</h1>
+    {{/* Mobile Posts list */}}
+    <div class="flex flex-col sm:hidden space-y-8 justify-center">
+      {{ range first 3 (where .Site.RegularPages "Type" "posts")}}
+      <div class="flex justify-between space-x-2">
+        <div class="space-y-2">
+          {{/* Author */}}
+          <div class="flex items-center m-0 space-x-2 text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+            <p class="m-0">{{.Params.author}}</p>
+            {{/* End Author */}}
+          </div>
+          {{/* Title and Date */}}
+          <a href="{{.Permalink}}" class="no-underline text-black">
+            <p class="font-bold line-clamp-2 text-md m-0 mt-2">{{.Title}}</p>
+            <p class="text-sm text-gray-500 m-0 mt-2">
+              {{.Date.Format "January 2, 2006"}}
+            </p>
+          </a>
+          {{/* End Title and Date */}}
+        </div>
+        {{/* Featured Image */}}
+        <a href="{{.Permalink}}">
+          <div
+            class="w-[100px] h-[100px] overflow-hidden flex justify-center items-center"
+          >
+            <img
+              class="object-scale-down w-[112px] h-[63px]"
+              src="{{.Params.featured_image}}"
+              alt="featured image"
+            />
+          </div>
+        </a>
+      </div>
+
+      {{ end }}
+    </div>
+
+    {{/* Desktop Posts List */}}
+    <div class="hidden sm:block space-y-8">
+      {{ range first 3 (where .Site.RegularPages "Type" "posts")}}
+      <div class="flex justify-center items-center space-x-3">
+        {{/* Featured Image */}}
+        <a href="{{.Permalink}}">
+          <div
+            class="w-[200px] h-[200px] overflow-hidden flex justify-center items-center"
+          >
+            <img
+              src="{{.Params.featured_image}}"
+              class="w-[224px] h-[126px]"
+              alt=""
+            />
+          </div>
+        </a>
+        <div class="space-y-2">
+          {{/* Author */}}
+          <div class="flex items-center m-0 space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+            <p class="m-0">{{.Params.author}}</p>
+            {{/* End Author */}}
+          </div>
+          {{/* Title and Date */}}
+          <a href="{{.Permalink}}" class="no-underline text-black">
+            <h1 class="font-bold line-clamp-2 text-md m-0 mt-2">{{.Title}}</h1>
+            <p>{{.Params.description}}</p>
+            <p class="text-gray-500 m-0 mt-2">
+              {{.Date.Format "January 2, 2006"}}
+            </p>
+          </a>
+          {{/* End Title and Date */}}
+        </div>
+      </div>
+
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* Show More Button */}}
+  <a class="" href="/posts">
+    <div class="bg-white inline-block p-3 shadow-md mt-16">
+      <p class="m-0 text-black font-semibold">Read More</p>
+    </div>
+  </a>
+</div>
+{{ end }}

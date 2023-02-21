@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<article itemscope itemtype="https://schema.org/Article">
+  <meta itemprop="publisher" content="thefiscalmap.com" />
+  <div>
+    <!-- Use this logic to create a similar articles list-->
+    {{ with .Params.categories}} {{ range . }}
+
+    <!--
+    <a href="/categories/{{. | urlize}}" class="no-underline">
+      <p class="sm:text-xl font-semibold text-primary-blue">{{.}}</p>
+    </a>
+-->
+    <p class="sm:text-xl font-semibold text-primary-blue">{{.}}</p>
+    {{ end }} {{ end }}
+    <h1 class="sm:text-7xl md:text-5xl text-2xl">{{.Title}}</h1>
+    <p>{{.Params.snippet}}</p>
+    <div class="flex items-center gap-4">
+      <p class="text-sm sm:text-xl font-semibold">{{.Params.author}}</p>
+      <p class="text-sm sm:text-base">
+        {{.Params.date.Format "January 2, 2006"}}
+      </p>
+    </div>
+    {{ with .Params.featured_image }}
+    <img class="w-full" src="{{ . }}" alt="featured image" />
+    {{ end }}
+    <div class="leading-loose">{{.Content}}</div>
+  </div>
+</article>
+{{ end }}
