@@ -21,6 +21,7 @@
   <body class="font-poppins m-0 p-0 bg-slate-100">
     {{ partial "header.html" . }} {{/* Desktop Ads */}}
     <div class="hidden">
+      {{/*
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5901823841459111"
@@ -38,9 +39,11 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      */}}
     </div>
     {{/* Mobile Ads */}}
     <div class="hidden">
+      {{/*
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5901823841459111"
@@ -58,12 +61,14 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      */}}
     </div>
     <main class="px-8 md:px-24 lg:px-72 mt-6 sm:mt-0">
       {{block "main" . }} {{end}}
     </main>
     {{/* Desktop Ads */}}
     <div class="hidden">
+      {{/*
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5901823841459111"
@@ -81,9 +86,11 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      */}}
     </div>
     {{/* Mobile Ads */}}
     <div class="hidden">
+      {{/*
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5901823841459111"
@@ -101,6 +108,7 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      */}}
     </div>
     {{ partial "footer.html" . }}
   </body>

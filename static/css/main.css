@@ -40,10 +40,6 @@
   margin-left: 0.75rem
 }
 
-.mt-16 {
-  margin-top: 4rem
-}
-
 .mt-2 {
   margin-top: 0.5rem
 }
@@ -60,20 +56,12 @@
   margin-top: 1.5rem
 }
 
-.mt-4 {
-  margin-top: 1rem
-}
-
 .mt-8 {
   margin-top: 2rem
 }
 
 .block {
   display: block
-}
-
-.inline-block {
-  display: inline-block
 }
 
 .flex {
@@ -302,10 +290,6 @@
   padding: 0.25rem
 }
 
-.p-3 {
-  padding: 0.75rem
-}
-
 .p-4 {
   padding: 1rem
 }
@@ -420,6 +404,10 @@
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.outline {
+  outline-style: solid
 }
 
 .transition {
