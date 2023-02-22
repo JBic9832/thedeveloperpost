@@ -12,7 +12,7 @@
     <h1>Featured</h1>
     {{ range first 1 (where .Site.RegularPages "Type" "posts") }}
     <div class="p-1">
-      <a class="no-underline" href="{{.Permalink}}">
+      <a class="no-underline" href="{{.Permalink}}" aria-label="{{.Title}}">
         {{ with .Params.featured_image }}
         <div class="flex overflow-hidden">
           <img class="m-0 max-w-full" src="{{ . }}" alt="" />
@@ -20,7 +20,11 @@
       </a>
       {{ end }}
       <div class="mt-3 text-black">
-        <a class="no-underline text-black" href="{{.Permalink}}">
+        <a
+          class="no-underline text-black"
+          href="{{.Permalink}}"
+          aria-label="{{.Title}}"
+        >
           <p class="text-xl sm:text-2xl font-bold m-0">{{.Title}}</p>
         </a>
         <p class="hidden sm:flex my-2 text-gray-500">{{.Params.description}}</p>
@@ -73,7 +77,11 @@
             {{/* End Author */}}
           </div>
           {{/* Title and Date */}}
-          <a href="{{.Permalink}}" class="no-underline text-black">
+          <a
+            href="{{.Permalink}}"
+            class="no-underline text-black"
+            aria-label="{{.Title}}"
+          >
             <p class="font-bold line-clamp-2 text-md m-0 mt-2">{{.Title}}</p>
             <p class="text-sm text-gray-500 m-0 mt-2">
               {{.Date.Format "January 2, 2006"}}
@@ -82,7 +90,7 @@
           {{/* End Title and Date */}}
         </div>
         {{/* Featured Image */}}
-        <a href="{{.Permalink}}">
+        <a href="{{.Permalink}}" aria-label="{{.Title}}">
           <div
             class="w-[100px] h-[100px] overflow-hidden flex justify-center items-center"
           >
@@ -135,7 +143,11 @@
             {{/* End Author */}}
           </div>
           {{/* Title and Date */}}
-          <a href="{{.Permalink}}" class="no-underline text-black">
+          <a
+            href="{{.Permalink}}"
+            class="no-underline text-black"
+            aria-lable="{{.Title}}"
+          >
             <h1 class="font-bold line-clamp-2 text-md m-0 mt-2">{{.Title}}</h1>
             <p class="text-gray-500 m-0 mt-2">
               {{.Date.Format "January 2, 2006"}}
