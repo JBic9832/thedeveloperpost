@@ -27,7 +27,7 @@
         >
           <p class="text-xl sm:text-2xl font-bold m-0">{{.Title}}</p>
         </a>
-        <p class="hidden sm:flex my-2 text-gray-500">{{.Params.description}}</p>
+        <p class="hidden sm:flex my-2 text-gray-800">{{.Params.description}}</p>
         <div class="text-sm flex space-x-3">
           <p>by {{.Params.Author}}</p>
           <div class="flex items-center">
@@ -111,7 +111,7 @@
       {{ range first 3 (where .Site.RegularPages "Type" "posts")}}
       <div class="flex justify-start items-center space-x-3">
         {{/* Featured Image */}}
-        <a href="{{.Permalink}}">
+        <a href="{{.Permalink}}" aria-label="{{.Title}}">
           <div
             class="w-[200px] h-[200px] overflow-hidden flex justify-center items-center"
           >
