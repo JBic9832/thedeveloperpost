@@ -13,8 +13,7 @@ T﻿his is a test for Netlify CMS. You can choose to ignore this blog or take it
 
 L﻿ink Shortcode and list
 
-
-1. {{<link href="https://thedeveloperpost.com/posts/monetize-blog/" name="Go read about how to monetize your blog after you see this">}
+1. {{<link href="https://thedeveloperpost.com/posts/monetize-blog/" name="Go read about how to monetize your blog after you see this">}}
 2. t﻿est
 3. t﻿est
 
