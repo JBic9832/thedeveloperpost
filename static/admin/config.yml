@@ -2,8 +2,8 @@ backend:
   name: git-gateway
 
 publish_mode: editorial_workflow
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: static/img
+public_folder: /img
 
 collections:
   - name: "blog"
@@ -18,4 +18,5 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Featured Image", name: "featured_image", widget: "image" }
+      - { label: "Categories", name: "categories", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
