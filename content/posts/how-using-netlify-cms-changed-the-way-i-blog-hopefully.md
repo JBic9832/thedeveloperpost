@@ -10,6 +10,7 @@ featured_image: /images/uploads/netcms.png
 T﻿his is a test for Netlify CMS. You can choose to ignore this blog or take it as a good demonstration of this tool. I got tired of writing blog posts by hand in VS Code.
 
 #﻿ The real test
+#﻿ Did this work
 
 L﻿ink Shortcode and list
 1﻿. {{<link href="https://thedeveloperpost.com/posts/monetize-blog/" name="Go read about how to monetize your blog after you see this">}}
