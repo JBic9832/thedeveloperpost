@@ -23,5 +23,6 @@ collections:
           name: "categories",
           widget: "list",
           allow_add: true,
+          field: { label: "Category", name: "category", widget: "string" },
         }
       - { label: "Body", name: "body", widget: "markdown" }
