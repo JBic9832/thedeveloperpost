@@ -6,6 +6,8 @@ description: I am currently testing out Netlify CMS with Hugo and hope it
 date: 2023-03-03T06:12:22.515Z
 author: Joseph Bickford
 featured_image: /images/uploads/netcms.png
+categories:
+  - Building Income
 ---
 T﻿his is a test for Netlify CMS. You can choose to ignore this blog or take it as a good demonstration of this tool. I got tired of writing blog posts by hand in VS Code.
 
