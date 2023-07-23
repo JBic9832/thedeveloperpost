@@ -1,7 +1,7 @@
 ---
 title: "Three ways to build a blog in 2023 (The definitive guide)"
 date: 2023-02-14T10:06:39-08:00
-featured_image: "/img/build-a-blog.png"
+featured_image: "/img/build-a-blog.webp"
 description: "This is the definitive guide on how you should build your blog site based on your needs."
 categories: ["Web Development"]
 author: "Joseph Bickford"

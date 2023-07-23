@@ -1,7 +1,7 @@
 ---
 title: "How to drive more traffic to your website or blog"
 date: 2023-02-21T19:30:28-08:00
-featured_image: "/img/gain-more-traffic.png"
+featured_image: "/img/gain-more-traffic.webp"
 description: "This guide will teach you the most popular tried and true ways to drive more traffic to your website or blog"
 author: "Joseph Bickford"
 Categories: ["Building Income"]

@@ -1,7 +1,7 @@
 ---
 title: "How to monetize your blog in 2023"
 date: 2023-02-20T19:30:37-08:00
-featured_image: "/img/monetize-blog-2023.png"
+featured_image: "/img/monetize-blog-2023.webp"
 description: "The top 3 ways to start making money from your blogs traffic in 2023."
 author: "Joseph Bickford"
 Categories: ["Building Income"]
